@@ -1,0 +1,103 @@
+.extensionsWrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  
+    .extensionCard{
+      img{
+        width: 70px;
+        border-radius: 10px;
+      }
+  
+      h1{
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: white;
+      }
+      h3{
+        color: rgba(255, 255, 255, 0.557);
+        font-weight: 150;
+      }
+      button{
+        background-color: transparent;
+        border-width: 1px;
+        border-color: rgba(255, 255, 255, 0.422);
+        border-style: solid;
+        border-radius: 20px;
+        padding: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: white;
+      }
+      border-radius: 10px;
+      background-color: rgb(31, 37, 53);
+      border-width: 1px;
+      border-color: rgba(255, 255, 255, 0.422);
+      border-style: solid;
+      padding: 15px;
+    }
+  }
+
+@font-face {
+  font-family: "MyMainFont";
+  src: url("public/assets/fonts/NotoSans-VariableFont_wdth,wght.ttf") format("truetype");
+  font-style: normal;
+}
+
+:root{
+  background-color: rgb(8, 15, 44);
+  font-family: "MyMainFont";
+}
+
+main{
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 40px;
+}
+
+.headerDiv{
+  background-color: rgb(31, 37, 53);
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 30px;
+  display: flex;          
+  justify-content: space-between;
+  align-items: center;
+  .themeBtn{
+    background-color: rgba(80, 89, 116, 0.635);
+    border-radius: 10px;
+    height: 40px;
+    width: 40px;
+    display: flex;          
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+h1{
+  color: white;
+}
+
+.navBarDiv{
+  button{
+    background-color: rgb(31, 37, 53);
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.422);
+    border-style: solid;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+  }
+  display: flex;          
+  justify-content: space-between;
+  align-items: center;
+  .activeBtn{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
