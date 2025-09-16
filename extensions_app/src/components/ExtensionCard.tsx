@@ -1,4 +1,8 @@
-import type { Extension } from "../App"
+import type { Extension } from "../App";
+import RemoveBtn from "./RemoveBtn";
+import { SwitchBtn } from "./SwitchBtn";
+
+
 
 const ExtensionCard = (props: Extension) => {
 
@@ -8,7 +12,8 @@ const ExtensionCard = (props: Extension) => {
         <img src={props.logo}/>
         <h1 className='extensionLogo'>{props.name}</h1>
         <h3 className='extensionDescription'>{props.description}</h3>
-        <button>Remove</button>
+        <RemoveBtn/>
+        <SwitchBtn/>
     </div>
   )
 }
